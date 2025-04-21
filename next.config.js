@@ -5,6 +5,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+ // Add these two properties
+  trailingSlash: true,
+  output: 'standalone',
   // This configuration helps with path aliases in Replit
   webpack: (config) => {
     config.resolve.alias = {
